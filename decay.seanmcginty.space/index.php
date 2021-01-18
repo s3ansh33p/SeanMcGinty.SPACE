@@ -17,7 +17,7 @@
 <body class="bgimg">
     <div class="content">
       <div class="topleft">
-        <p>Josh Kelly</p>
+        <p>Luke Carpenter</p>
         <a target="_blank" href="https://discord.gg/CwzmPMQMbH" class="discord">
           <img src="<?=SITE_URL;?>assets/images/svg/discord.svg">
           <p>Decay#0199</p>
