@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.content {
+  color: white;
+  font-family: "Noto Color Emoji","Segoe UI Symbol";
+  font-size: 25px;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.66);
+  z-index: 2;
+}
+
+.topleft { 
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-weight: bold;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.middle p {
+  color: #ffc400;
+}
+
+#countdown {
+  padding-top: 1.25rem;
+}
+
+.social {
+  list-style: none;
+  display: inline-block;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.social li {
+  float: left;
+}
+
+.social li a {
+  color: white;
+  margin-right: 10px;
+}
+
+.discord {
+  display: inline-flex;
+}
+
+.discord img {
+  height: 23px;
+}
+
+.discord p {
+  font-size: 16px;
+  margin-top: -2px;
+  margin-left: 5px;
+  color: #1e90ff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.siteref {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.siteref a {
+  color: #868686;
+  font-size: 20px;
+}
+
+.siteref a:hover {
+  color: #1e90ff;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.bgimg {
+  background-image: url("http://dinrah.seanmcginty.space/assets/images/backgrounds/csgo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
