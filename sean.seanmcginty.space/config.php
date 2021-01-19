@@ -9,7 +9,7 @@
 
 	define( 'GLOBAL_URL', dirname(__FILE__) );
 
-	define( "SITE_URL" , "https://decay.seanmcginty.space/" );
+	define( "SITE_URL" , "https://sean.seanmcginty.space/" );
 
 	define( "ROOT_URL" , "https://seanmcginty.space" )
 

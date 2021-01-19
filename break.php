@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <?php include_once(GLOBAL_URL."/layout/header.php");?>
+  <?php $page="Maintenance"; include_once(GLOBAL_URL."/layout/header.php");?>
     <link rel="stylesheet" type="text/css" href="<?=SITE_URL;?>/assets/stylesheets/css/launch.css?v=<?=CSS_VER;?>"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css?v=<?=VEN_VER;?>">
-    <title>Maintenance | <?=SITE_SUBT;?></title>
   </head>
   <body>
     <div class="content">

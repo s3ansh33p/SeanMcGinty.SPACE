@@ -6,11 +6,11 @@
 <html lang="en">
   <head>
     <?php $page="Home"; include_once(GLOBAL_URL."/layout/header.php");?>
-    <link rel="stylesheet" type="text/css" href="<?=SITE_URL;?>assets/stylesheets/css/mcginty.css?v=<?=CSS_VER.random_int(10,1000);?>"/>
+    <link rel="stylesheet" type="text/css" href="<?=SITE_URL;?>assets/stylesheets/css/mcginty.css?v=<?=CSS_VER;?>"/>
     <link href='https://fonts.googleapis.com/css?family=Orbitron|Monoton' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
-<body class="bgimg overflow-none">
+<body onload="checkScrollReset();" class="bgimg overflow-none">
     <div class="content">
         <div class="core">
             <div class="middle welcomer">
@@ -29,6 +29,19 @@
                 <p class="explore explore-2">Scroll for more</p>
             </div>
             <a class="explore ca3-scroll-down-link ca3-scroll-down-arrow ca3-hide"></a>
+            <!-- Scroll Down Content -->
+            <div class="slide slide-1">
+                <h2>Slide 1</h2>
+                <p>Slide 11</p>
+            </div>
+            <div class="slide slide-2">
+                <h2>Slide 2</h2>
+                <p>Slide 21</p>
+            </div>
+            <div class="slide slide-3">
+                <h2>Slide 3</h2>
+                <p>Slide 31</p>
+            </div>
         </div>
         
         <ul class="social">
@@ -57,14 +70,24 @@
         </div>
     </div>
     <script>const site_url="<?=SITE_URL;?>"; const vol="<?=AUD_VOL;?>";</script>
-    <script src="<?=SITE_URL;?>assets/js/mcginty.audio.js?v=<?=JS_VER;?>"></script>
-    <script src="<?=SITE_URL;?>assets/js/mcginty.home.js?v=<?=JS_VER.random_int(10,1000);?>"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+    <script src="<?=SITE_URL;?>assets/js/mcginty.audio.js?v=<?=JS_VER;?>"></script>
+    <script src="<?=SITE_URL;?>assets/js/mcginty.home.js?v=<?=JS_VER;?>"></script>
     <script>
-        //GSAP Load
-        gsap.from('.welcomer', {opacity: 0, duration: 1, y: -75, ease: 'Power3.easeInOut'})
-        gsap.from('.social', {opacity: 0, duration: 1, x: -150, ease: 'Power3.easeInOut', delay: 0.25})
-        gsap.from('.footer', {opacity: 0, duration: 1, x: 350, ease: 'Power3.easeInOut', delay: 0.25})
+        function checkScrollReset() {
+            var currpage = window.location.href;
+            var lasturl = sessionStorage.getItem("last_url");
+            if(lasturl == null || lasturl.length === 0 || currpage !== lasturl ){
+                sessionStorage.setItem("last_url", currpage);
+            }else{
+                setTimeout(function(){ 
+                    //Reset for GSAP
+                    document.body.scrollTop = 0; // For Safari
+                    document.documentElement.scrollTop = 0; 
+                }, 1);
+            }
+        }
     </script>
 </body>
 </html>

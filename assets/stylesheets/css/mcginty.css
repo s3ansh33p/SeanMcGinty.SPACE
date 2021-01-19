@@ -391,10 +391,6 @@
 }
 
 .hidescroll {
-  background-color: #eee;
-  width: 200px;
-  height: 100px;
-  border: 1px dotted black;
   overflow-y: scroll; /* Add the ability to scroll */
 }
 
@@ -411,4 +407,27 @@
 
 .overflow-none {
   overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.slide.slide-1 {
+  background-image: url("http://localhost/space/assets/images/backgrounds/stars.jpg");
+  margin-top: 100vh;
+}
+
+.slide.slide-2 {
+  background-image: url("http://localhost/space/assets/images/backgrounds/stars.jpg");
+  margin-top: 200vh;
+}
+
+.slide.slide-3 {
+  background-image: url("http://localhost/space/assets/images/backgrounds/stars.jpg");
+  margin-top: 300vh;
 }
