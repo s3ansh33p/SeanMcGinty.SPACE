@@ -9,9 +9,9 @@
 
 	define( 'GLOBAL_URL', dirname(__FILE__) );
 
-	define( "SITE_URL" , "http://dinrah.seanmcginty.space/" );
+	define( "SITE_URL" , "https://dinrah.seanmcginty.space/" );
 
-	define( "ROOT_URL" , "http://seanmcginty.space" )
+	define( "ROOT_URL" , "https://seanmcginty.space" )
 
 	# https://jscompress.com/
 ?>
