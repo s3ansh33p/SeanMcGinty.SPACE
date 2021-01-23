@@ -33,7 +33,6 @@
                     <h1>Welcome</h1>
                 </div>
                 <h1 class="explore explore-1 header">About Me</h1>
-                <p class="explore explore-1">I am currently a Year 11 Student at Wesley College</p>
                 <p class="explore explore-1">I am a computer enthusiast, entrepreneur and programmer.</p>
                 <p class="explore explore-1">I have been in the web development scene for over four</p>
                 <p class="explore explore-1">years and hope to continue with this passion.</p>
