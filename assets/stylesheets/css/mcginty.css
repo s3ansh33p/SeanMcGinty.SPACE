@@ -464,6 +464,7 @@
 .services .row .col p:first-of-type {
   font-weight: bold;
   color: #ffbb00;
+  padding-top: 1em;
 }
 
 .explorer-2 {
@@ -525,4 +526,28 @@
 
 .end-content {
   margin-bottom: 100px;
+  text-align: center;
+}
+
+.contact {
+  margin: auto;
+  max-width: 75%;
+}
+
+.contact-container {
+  display: flex;
+  text-align: left;
+  place-content: center;
+}
+
+.contact-icon:first-of-type {
+  padding-right: 0.6em;
+}
+
+.contact-icon {
+  padding-right: 0.3em;
+}
+
+.fa-dark {
+  color: black;
 }

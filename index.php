@@ -50,74 +50,62 @@
                                 <div class="col s6 m4 l3">
                                     <img class="skills-svg" src="<?=SITE_URL;?>assets/images/svg/html.svg">
                                     <p>HTML</p>
-                                    <p>Advanced</p>
-                                    <p>(4 Years)</p>
+                                    <?php echo skill(HTML);?>
                                 </div>
                                 <div class="col s6 m4 l3">
                                     <img class="skills-svg" src="<?=SITE_URL;?>assets/images/svg/css.svg">
                                     <p>CSS</p>
-                                    <p>Advanced</p>
-                                    <p>(4 Years)</p>
+                                    <?php echo skill(CSS);?>
                                 </div>
                                 <div class="col s6 m4 l3">
                                     <img class="skills-svg" src="<?=SITE_URL;?>assets/images/svg/js.svg">
                                     <p>JS</p>
-                                    <p>Skilled</p>
-                                    <p>(3 Years)</p>
+                                    <?php echo skill(JS);?>
                                 </div>
                                 <div class="col s6 m4 l3">
                                     <img class="skills-svg" src="<?=SITE_URL;?>assets/images/svg/php.svg">
                                     <p>PHP</p>
-                                    <p>Intermediate</p>
-                                    <p>(2 Years)</p>
+                                    <?php echo skill(PHP);?>
                                 </div>
                                 <div class="col s6 m4 l3">
                                     <img class="skills-svg" src="<?=SITE_URL;?>assets/images/svg/scss.svg">
                                     <p>SCSS</p>
-                                    <p>Competent</p>
-                                    <p>(6 Months)</p>
+                                    <?php echo skill(SCSS);?>
                                 </div>
                                 <div class="col s6 m4 l3">
                                     <img class="skills-svg" src="<?=SITE_URL;?>assets/images/svg/sql.svg">
                                     <p>SQL</p>
-                                    <p>Competent</p>
-                                    <p>(1 Year)</p>
+                                    <?php echo skill(SQL);?>
                                 </div>
                                 <div class="col s6 m4 l3">
                                     <img class="skills-svg" src="<?=SITE_URL;?>assets/images/svg/node.svg">
                                     <p>NodeJS</p>
-                                    <p>Competant</p>
-                                    <p>(1 Year)</p>
+                                    <?php echo skill(NODEJS);?>
                                 </div>
                                 <div class="col s6 m4 l3">
                                     <img class="skills-svg" src="<?=SITE_URL;?>assets/images/svg/github.svg">
                                     <p>GitHub</p>
-                                    <p>Intermediate</p>
-                                    <p>(2 Years)</p>
+                                    <?php echo skill(GITHUB);?>
                                 </div>
                                 <div class="col s6 m4 l3">
                                     <img class="skills-svg" src="<?=SITE_URL;?>assets/images/svg/wp.svg">
                                     <p>WordPress</p>
-                                    <p>Intermediate</p>
-                                    <p>(2 Years)</p>
+                                    <?php echo skill(WORDPRESS);?>
                                 </div>
                                 <div class="col s6 m4 l3">
                                     <img class="skills-svg" src="<?=SITE_URL;?>assets/images/svg/ai.svg">
                                     <p>Illustrator</p>
-                                    <p>Competent</p>
-                                    <p>(1 Year)</p>
+                                    <?php echo skill(ILLUSTRATOR);?>
                                 </div>
                                 <div class="col s6 m4 l3">
                                     <img class="skills-svg" src="<?=SITE_URL;?>assets/images/svg/ps.svg">
                                     <p>PhotoShop</p>
-                                    <p>Skilled</p>
-                                    <p>(3 Years)</p>
+                                    <?php echo skill(PHOTOSHOP);?>
                                 </div>
                                 <div class="col s6 m4 l3">
                                     <img class="skills-svg" src="<?=SITE_URL;?>assets/images/svg/office.svg">
                                     <p>Office Suite</p>
-                                    <p>Skilled</p>
-                                    <p>(6 Years)</p>
+                                    <?php echo skill(OFFICE);?>
                                 </div>
                             </div>
                         </div>
@@ -129,47 +117,43 @@
                                 <div class="col s12 m6 l4">
                                     <img class="services-svg" src="<?=SITE_URL;?>assets/images/svg/webdev.svg">
                                     <p>Web Development</p>
-                                    <p>Content Goes Here</p>
                                 </div>
                                 <div class="col s12 m6 l4">
                                     <img class="services-svg" src="<?=SITE_URL;?>assets/images/svg/grades.svg">
                                     <p>Graphic Design</p>
-                                    <p>Content Goes Here</p>
                                 </div>
                                 <div class="col s12 m6 l4">
                                     <img class="services-svg" src="<?=SITE_URL;?>assets/images/svg/uiux.svg">
                                     <p>UI / UX</p>
-                                    <p>Content Goes Here</p>
                                 </div>
                                 <div class="col s12 m6 l4">
                                     <img class="services-svg" src="<?=SITE_URL;?>assets/images/svg/fuldev.svg">
                                     <p>Fullstack Development</p>
-                                    <p>Content Goes Here</p>
                                 </div>
                                 <div class="col s12 m6 l4">
                                     <img class="services-svg" src="<?=SITE_URL;?>assets/images/svg/conwri.svg">
                                     <p>Content Writing</p>
-                                    <p>Content Goes Here</p>
                                 </div>
                                 <div class="col s12 m6 l4">
                                     <img class="services-svg" src="<?=SITE_URL;?>assets/images/svg/resdes.svg">
                                     <p>Responsive Design</p>
-                                    <p>Content Goes Here</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="section main-content end-content explore">
+                    <div class="section end-content explore">
                         <h1 class="header">Contact Me</h1>
                         <div class="contact">
                             <div class="row">
-                                <div class="col s12 m6">
-                                    <p>Form Maybe</p>
-                                    <p>Content Goes Here</p>
-                                </div>
-                                <div class="col s12 m6">
-                                    <p>Details</p>
-                                    <p>Content Goes Here</p>
+                                <div class="col s12">
+                                    <div class="contact-container">
+                                        <div class="contact-icon">
+                                            <a href="mailto:seanrwmcginty@gmail.com"><i class="fa fa-envelope-square fa-4x" aria-hidden="true"></i></a>
+                                        </div>
+                                        <div class="contact-icon">
+                                            <a href="tel:+61449682445"><i class="fa fa-phone-square fa-4x" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -177,7 +161,7 @@
                 </div>
             </div>
         </div>
-        <div class="footer-wrapper" style="display: none;"></div>
+        <div class="footer-wrapper" style="opacity: 0;"></div>
         <ul class="social">
                 <li><a href="mailto:seanrwmcginty@gmail.com"><i class="fa fa-envelope-square fa-2x" aria-hidden="true"></i></a></li>
                 <li><a target="_blank" href="https://github.com/s3ansh33p"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a></li>
@@ -203,9 +187,7 @@
             </span>
         </div>
     </div>
-    <script>const site_url="<?=SITE_URL;?>";const vol="<?=AUD_VOL;?>";function checkScrollReset(){var e=window.location.href,o=sessionStorage.getItem("last_url");null==o||0===o.length||e!==o?sessionStorage.setItem("last_url",e):setTimeout(function(){document.body.scrollTop=0,document.documentElement.scrollTop=0;},1);gsap.to('.loader', {opacity: 0, duration: 0.2, ease: 'Power2.easeInOut', onComplete: cleanUp});function cleanUp() {document.getElementsByClassName("content")[0].classList.remove("m-hide");document.getElementsByClassName("loader")[0].classList.replace("loader","m-hide");}
-    
-    }</script>
+    <script>const site_url="<?=SITE_URL;?>";const vol="<?=AUD_VOL;?>";function checkScrollReset(){var e=window.location.href,o=sessionStorage.getItem("last_url");null==o||0===o.length||e!==o?sessionStorage.setItem("last_url",e):setTimeout(function(){document.body.scrollTop=0,document.documentElement.scrollTop=0;},1);gsap.to('.loader', {opacity: 0, duration: 0.2, ease: 'Power2.easeInOut', onComplete: cleanUp});function cleanUp() {document.getElementsByClassName("content")[0].classList.remove("m-hide");document.getElementsByClassName("loader")[0].classList.replace("loader","m-hide");}}</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>

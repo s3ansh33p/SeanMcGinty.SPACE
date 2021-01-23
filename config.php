@@ -30,9 +30,57 @@
 	# https://jscompress.com/
 	
 //======================================================================
+// Skills Config
+//======================================================================
+
+	define( "HTML" , "Jan 1, 2017 00:00:00" );
+	
+	define( "CSS" , "Jan 1, 2017 00:00:00" );
+	
+	define( "JS" , "Jan 1, 2018 00:00:00" );
+	
+	define( "PHP" , "Jan 1, 2019 00:00:00" );
+	
+	define( "SCSS" , "Sep 1, 2020 00:00:00" );
+	
+	define( "SQL" , "Mar 1, 2020 00:00:00" );
+	
+	define( "NODEJS" , "Jan 1, 2020 00:00:00" );
+	
+	define( "GITHUB" , "Jan 1, 2019 00:00:00" );
+	
+	define( "WORDPRESS" , "Jan 1, 2019 00:00:00" );
+	
+	define( "ILLUSTRATOR" , "Jan 1, 2020 00:00:00" );
+	
+	define( "PHOTOSHOP" , "Jan 1, 2018 00:00:00" );
+	
+	define( "OFFICE" , "Jan 1, 2015 00:00:00" );
+
+//======================================================================
 // Audio Config
 //======================================================================
 
 	define( "AUD_VOL" , "0.5" );
 
-?>
+//======================================================================
+// Functions
+//======================================================================
+
+function skill($date) {
+	$terms = ['Competant','Intermediate','Skilled','Proficient','Advanced','Expirienced','Expirienced','Expert'];
+	$diff = abs(strtotime(date("Y-m-d")) - strtotime($date));  
+	$years = floor($diff / (365*60*60*24));  
+	$months = floor(($diff - $years * 365*60*60*24) / (30*60*60*24));  
+	if ($years >= 8) {
+		return "<p>".$terms[7]."</p><p>(".$years." Years)</p>";
+	} else if ($years >= 1) {
+		return "<p>".$terms[($years-1)]."</p><p>(".$years." Years)</p>";
+	} else if ($years == 1) {
+		return "<p>".$terms[0]."</p><p>(1 Year)";
+	} else {
+		return "<p>".$terms[0]."</p><p>(".$months." Months)";
+	};
+}
+
+?> 
