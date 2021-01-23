@@ -32,5 +32,6 @@ if (distance < 0) {
   document.getElementById("countdown").innerHTML = "COMPLETED";
   //document.getElementById("countdown").style.display = "none";
   endid.style.display = "block";
+  window.location.reload();
 }
 }, 1000);
